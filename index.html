@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surbhi tripathi portfolio</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+        }
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+/*.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}*/
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+
+<section id='about' class="about-section">
+  <div class="container">
+    <h2>About Me</h2>
+    <img src="images/about/img 1.jpg" alt="About Me">
+    <p>Hi, I’m Surbhi, a BCA graduate with a passion for data analysis and a solid foundation in computer applications. <br>
+       My academic journey at <b>post graduate government college </b>  provided me with hands-on experience in <b>data manipulation</b>, 
+       <br> <b>statistical analysis</b>, and programming with tools like <b>Python, SQL, and Excel.</b>
+         <br>What excites me about data analysis is the ability to uncover hidden trends and drive business growth. <br>
+         I’m eager to bring my analytical skills and enthusiasm for data-driven problem-solving to a dynamic team <br>
+          where I can continue to learn and contribute to impactful projects.</p>
+    
+  </div>
+
+  <p>Download my resume using the link below:</p>
+    <!-- Link to resume -->
+    <a href="https://resume-surbhi.tiiny.site" download="YourName_Resume.pdf" title="Download Resume">
+        <button>Download Resume</button>
+    </a>
+
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light" id="projects">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/pizza img.jpeg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Pizza Sales Dashboard: SQL Queries & Insights</h5>
+            <p class="card-text">"Developed a series of SQL queries to analyze pizza sales data, providing
+               insights into sales performance, customer preferences, and operational efficiency. Technologies Used: SQL, Power bi."</p>
+            <!-- <a href="#" class="btn btn-primary">Blog Post</a> -->
+            <a href="https://github.com/surbhitripathi7/pizza-sales-sql_query" class="btn btn-secondary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/ecommerce.jpeg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">eCommerce Customer Insights: SQL & Python Analysis</h5>
+            <p class="card-text">"Conducted a comprehensive analysis of e-commerce sales data using SQL and Python to gain 
+              insights into sales performance, customer behavior, and product trends. Technologies Used: MySQL, Python".</p>
+            <!-- <a href="#" class="btn btn-primary">Blog Post</a> -->
+            <a href="https://github.com/surbhitripathi7/SQL-python-project" class="btn btn-secondary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/customer sales.jpeg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Project 3</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu.</p>
+            <!-- <a href="#" class="btn btn-primary">Blog Post</a> -->
+            <a href="#" class="btn btn-secondary">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-white" id="skills">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row">
+      <!-- Skill 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/1.png" class="card-img-top" alt="Python">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">I am skilled in Python, utilizing it for data analysis, automation, and problem-solving. Proficient with libraries like <b>Pandas for data manipulation</b>, <b>NumPy for computations</b>, 
+              and <b>Matplotlib/Seaborn for visualization</b>, I leverage these tools to drive insights and efficiency.</p>
+            <!-- <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a> -->
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/2.png" class="card-img-top" alt="Data Visualization">
+          <div class="card-body">
+            <h5 class="card-title">Data Visualization</h5>
+            <p class="card-text">I excel in transforming complex data into clear, actionable insights through effective data visualization. 
+              Proficient with tools such as <b>Power BI, and Matplotlib</b>, I create intuitive and compelling dashboards and charts in my project.</p>
+            <!-- <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a> -->
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/3.png" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">SQL</h5>
+            <p class="card-text">I am proficient in SQL, using it to efficiently query, manipulate, and analyze data from complex databases.
+               Skilled in writing advanced queries, creating and managing databases, and optimizing performance, 
+               I leverage SQL to drive data-driven decision-making..</p>
+            <!-- <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a> -->
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/4.png" class="card-img-top" alt="Data Storytelling">
+          <div class="card-body">
+            <h5 class="card-title">Data Storytelling</h5>
+            <p class="card-text">I excel in data storytelling, transforming complex datasets into engaging narratives that drive actionable insights.
+               Using tools like Power BI, I create visual stories that highlight key trends and patterns in a my project.</p>
+            <!-- <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a> -->
+          </div>
+        </div>
+      </div>
+      <!-- skill 5 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card">
+        <img src="images/skills/excel img.png" class="card-img-top" alt="Excel">
+        <div class="card-body">
+          <h5 class="card-title">Excel</h5>
+          <p class="card-text"> I am highly proficient in Excel, adept at leveraging advanced functions, pivot tables, and data visualization tools to analyze 
+            and present data effectively. From automating complex calculations to designing interactive dashboards</p>
+    </div>
+  </div>
+  </div>
+  <!-- skill 6-->
+  <div class="col-lg-3 col-md-6 mb-4">
+    <div class="card">
+      <img src="images/skills/html.jpeg" class="card-img-top" alt="HTML">
+      <div class="card-body">
+        <h5 class="card-title">HTML</h5>
+        <p class="card-text">With a solid understanding of HTML, I create structured and semantic web pages that ensure content is organized and accessible. 
+          Experienced in using core HTML elements such as forms, tables, and multimedia, I focus on building clean, responsive layouts.</p>
+  </div>
+</div>
+  </div>
+<!-- skill 7 -->
+  <div class="col-lg-3 col-md-6 mb-4">
+    <div class="card">
+      <img src="images/skills/css image.png" class="card-img-top" alt="CSS">
+      <div class="card-body">
+        <h5 class="card-title">CSS</h5>
+        <p class="card-text">Proficient in CSS, I apply foundational techniques to build and style responsive web pages. Comfortable with core concepts such as
+           Flexbox, basic animations, and media queries, I focus on creating clean and visually appealing layouts.</p>
+  </div>
+</div>
+  </div>
+    
+  <!--skill 8 -->
+  <div class="col-lg-3 col-md-6 mb-4">
+    <div class="card">
+      <img src="images/skills/power bi.jpeg" class="card-img-top" alt="POWER BI">
+      <div class="card-body">
+        <h5 class="card-title">Power BI</h5>
+        <p class="card-text">Proficient in Power BI, I design and develop interactive dashboards and detailed reports that drive data-driven decision-making. 
+          Skilled in using Power BI’s data modeling, DAX formulas, and visualizations, I transform complex datasets into actionable insights in my project.</p>
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <!-- <div class="row">
+      <div class="col-lg-6">
+        <p><i class="fas fa-envelope"></i> surbhitripathi582001@gmail.com</p>
+      </div>
+      <div class="col-lg-6">
+        <p><i class="fas fa-phone"></i>8284869820</p>
+      </div>
+    </div> -->
+    <div class="row">
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://www.linkedin.com/in/surbhi-k-b6827b217/" target="_blank">
+          <img src="icons/linkedin img.png" alt="LinkedIn" class="social-icon">
+          LinkedIn
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://github.com/surbhitripathi7" target="_blank">
+          <img src="icons/github.png" alt="GitHub" class="social-icon">
+          GitHub
+        </a>
+      </div>
+    
+      <div class="col-lg-2 col-md-4 mb-4"> 
+        <a href="https://wa.me/8284869820" target="_blank"> 
+          <img src="icons/whatsapp.png" alt="whatsapp" class="social-icon">
+           WhatsApp
+        </a> 
+      </div> 
+      <!-- </div>  -->
+       <div class="col-lg-2 col-md-4 mb-4"> 
+        <a href="mailto:surbhitripathi582001@gmail.com" target="_blank">
+         <img src="icons/email img.png" alt="Medium" class="social-icon">
+          Email 
+       </a>
+      </div> 
+  <!-- </div> -->
+  
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="tel:8284869820" target="_blank">
+          <img src="icons/phone img.png" alt="YouTube" class="social-icon">
+          Phone
+        </a>
+      </div> 
+    </div>
+        
+      <!-- </div>
+    </div>
+  </div> -->
+</section>
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Surbhi Kumari</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
