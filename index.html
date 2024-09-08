@@ -8,6 +8,16 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 <style>
+
+  #home {
+    background: url('your-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
   .about-section {
     text-align: center;
     padding: 50px 0;
@@ -162,6 +172,15 @@ html {
 
 </head>
 <body>
+
+
+   <section id="home">
+        <div class="intro">
+            <h1>Hi, I'm [Your Name]</h1>
+            <p>Data Analyst | Enthusiastic Learner</p>
+            <button onclick="scrollToSection('contact')">Get in Touch</button>
+        </div>
+    </section>
 
 <section id='about' class="about-section">
   <div class="container">
@@ -474,5 +493,9 @@ html {
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
+
 </body>
 </html>
